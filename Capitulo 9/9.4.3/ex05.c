@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/* 
-    ---->>>>>>>>>  NAO ESTA PRONTO NAO  <<<<<<<<<<-----
-*/
-
 int somatorioVetor(int *v, int n){
 	if(n == 0)
 		return v[0];
