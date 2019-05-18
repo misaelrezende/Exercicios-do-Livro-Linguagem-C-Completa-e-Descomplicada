@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-/* 
-    ---->>>>>>>>>  NAO ESTA PRONTO NAO  <<<<<<<<<<-----
-*/
-
-void imprime(int n){
-	printf("%d ", n);
-	if(n == 0)
-    	return;
-  	return imprime(n-1);
+void imprimeCrescente(int n){
+  if(n == 0){
+    printf("%d ", n);
+    return;
+  }
+  imprimeCrescente(n-1);
+  printf("%d ", n);
 }
+
 int main(){
-  	int n;
-  	scanf("%d", &n);
-  	imprime(n);
-	printf("\n");
-  	return 0;
+  int n;
+  scanf("%d", &n);
+  imprimeCrescente(n);
+  printf("\n");
+  return 0;
 }
