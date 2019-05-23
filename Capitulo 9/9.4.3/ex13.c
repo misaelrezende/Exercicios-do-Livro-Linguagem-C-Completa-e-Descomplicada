@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-// ESTA ERRADO AINDA
-// ESTA ERRADO AINDA
-// ESTA ERRADO AINDA
-// ESTA ERRADO AINDA
-// ESTA ERRADO AINDA
+
 float somatorio(int n){
   if(n == 1)
     return 2; // ( (1 + (1*1)) / 1) = 2

@@ -1,20 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
-void somaNCubos(int n){
-    float s = 0;
-    int i;
-    for(i = 1; i <= n; i++){
-        /* para o calculo da terceira potencia abaixo tambem poderia ser usada
-           a funcao pow() da biblioteca "math.h"
-        */
-        s += (i * i * i);
-    }
-    printf("A soma eh: %0.0f\n", s);
+float somaNCubos(int n){
+    if(n == 1)
+        return pow(n, 3);
+    float soma = pow(n, 3);
+    return soma + somaNCubos(n - 1);
 }
 
 int main(){
     int n;
+    float soma;
     scanf("%d", &n);
-    somaNCubos(n);
+    soma = somaNCubos(n);
+    printf("%f\n", soma);
     return 0;
 }

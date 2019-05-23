@@ -1,22 +1,22 @@
 #include <stdio.h>
+#include <math.h>
 
-/* 
-    ---->>>>>>>>>  NAO ESTA PRONTO NAO  <<<<<<<<<<-----
+/* programa baseado no retirado do link abaixo
+    https://stackoverflow.com/a/17717071
 */
 
-void inverteNumero(int n){
-    printf("%d", n % 10);
-    if(n % 10 < 10){
-        printf("%d", n % 10);
-        return;
-    }
-    return inverteNumero(n % 10);
+int retornaInvertido(int numero){
+    if(numero < 10)
+        return numero;
+
+    return (numero % 10) * pow(10, (int)log10(numero))
+            + retornaInvertido(numero / 10);
 }
 
 int main(){
-    int n;
+    int n, resultado;
     scanf("%d", &n);
-    inverteNumero(n);
-    printf("\n");
+    resultado = retornaInvertido(n);
+    printf("%d\n", resultado);
     return 0;
 }
