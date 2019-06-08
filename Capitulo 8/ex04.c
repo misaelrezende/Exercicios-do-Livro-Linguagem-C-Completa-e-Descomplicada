@@ -19,6 +19,7 @@ int main(){
     area = (ret1.p1.y - ret1.p2.y) * (ret1.p2.x - ret1.p1.x);
     diagonal = sqrt((pow(ret1.p2.x - ret1.p1.x, 2) + pow(ret1.p2.y - ret1.p1.y, 2)));
     perimetro = ((ret1.p1.y - ret1.p2.y) + (ret1.p2.x - ret1.p1.x)) * 2;
-    printf("Area: %d\nComprimento da diagonal: %d\nPerimetro: %d\n", area, diagonal, perimetro);
+    printf("Area: %d\nComprimento da diagonal: %d\nPerimetro: %d\n", 
+    area, diagonal, perimetro);
     return 0;
 }
