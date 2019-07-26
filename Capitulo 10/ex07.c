@@ -64,7 +64,7 @@ int main(){
     string 2: eh
     resposta: A segunda string esta contida na primeira string
 
-    string 1: a vida de joanah------------------------
+    string 1: a vida de joanah
     string 2: joanl
     resposta: A segunda string NAO esta contida na primeira string
 
@@ -72,7 +72,7 @@ int main(){
     string 2: joana
     resposta: A segunda string esta contida na primeira string
 
-    string 1: a vida de joana nao -------------
+    string 1: a vida de joana nao
     string 2: joanah
     resposta: A segunda string NAO esta contida na primeira string
 
@@ -80,11 +80,11 @@ int main(){
     string 2: nao
     resposta: A segunda string esta contida na primeira string
 
-    string 1: a vida de joana nao -------
+    string 1: a vida de joana nao
     string 2: naol
     resposta: A segunda string NAO esta contida na primeira string
 
-    string 1: a ------
+    string 1: a
     string 2: ah
     resposta: A segunda string NAO esta contida na primeira string
 
