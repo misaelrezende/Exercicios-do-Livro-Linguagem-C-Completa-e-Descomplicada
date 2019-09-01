@@ -2,9 +2,10 @@
 #include <stdlib.h>
 /*
 	A matriz A originalmente é uma matriz de tamanho desconhecido n.
-	Como não eh possível passar uma matriz para a função sem dizer o tamanho das colunas dela
-	pode se contornar passando a matriz como um array comum e usar aritmética de 
-	ponteiros para fazer a interação dentro da matriz.
+	Uma outra forma de passar/acessar uma matriz em uma função
+	é atraves de um vetor (inclusive eh assim que a matriz é representada na memória)
+	e ir acessando ele através de aritmética de ponteiros.
+	
 */
 int* multiplicar(int *A, int *B, int n){
 	int *C, i, j;
