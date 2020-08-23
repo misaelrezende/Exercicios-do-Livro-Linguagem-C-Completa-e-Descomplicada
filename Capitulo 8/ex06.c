@@ -48,5 +48,10 @@ int main(){
     }
     printf("O aluno com a maior media eh o aluno %s e a media das notas dele foi %f\n",
         alunos[indiceAluno].nome, maiorMedia);
+    printf("\nNotas:\n");
+    for(i=0;i<3;i++)
+    {
+       printf(" %2.2f ",alunos[indiceAluno].notas[i]);
+    }
     return 0;
 }
