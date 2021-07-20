@@ -5,7 +5,7 @@ int main(){
     printf("Digite os 10 numeros: ");
     for(i = 0; i < 10; i++){
         scanf("%d", &vetor[i]);
-        for(j = 0; j < i - 1; j++){
+        for(j = 0; j < i ; j++){
             if(vetor[i] == vetor[j]){
                 printf("Digite outro numero diferente de %d: ", vetor[i]);
                 i--;
