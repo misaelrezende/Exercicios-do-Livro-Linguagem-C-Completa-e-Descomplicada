@@ -23,8 +23,8 @@ int main(){
         return 0;
     }
     // o trecho abaixo so executa se todos if's acima nao forem verdadeiros
-    x1 = (- b + sqrt(delta)) / 2 * a;
-    x2 = (- b - sqrt(delta)) / 2 * a;
+    x1 = (- b + sqrt(delta)) / (2 * a);
+    x2 = (- b - sqrt(delta)) / (2 * a);
     printf("x1 = %f\n", x1);
     printf("x2 = %f", x2);
     return 0;
